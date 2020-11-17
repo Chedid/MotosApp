@@ -11,7 +11,7 @@ import Style from './styles';
 export default function Motos({ navigation }) {
     return (
       <View style={Style.container} >
-        <Text style={Style.container}>Motos</Text>
+        <Text style={Style.container}></Text>
       </View>
     );
   }

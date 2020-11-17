@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Text, View, ImageBackground, StyleSheet, Alert } from 'react-native';
+import { Button, Text, View, ImageBackground, StyleSheet, Alert, Image, ScrollView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -13,36 +13,39 @@ import Style from './Estilo/styleinicial';
 
 const image = { uri: "https://i.pinimg.com/564x/7d/5e/36/7d5e360544b7b24c726879f477018c8b.jpg" };
 
-
 // Primeira tela do App
 
 function HomeScreen({ navigation }) {
   return (
+
     <ImageBackground source={image} style={Style.image}>
-      <Text style={Style.text}>Inside</Text>
-      <View style={{
-        flex: 1,
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center"
-      }}>
+      <ScrollView>
+        <Text style={Style.text}>Novidades</Text>
 
-        <View style={{
-          width: 150, height: 150, backgroundColor: 'steelblue' }}/>
+        <View style={Style.caixas}>
+
+          <Image source={{ uri: 'https://i0.statig.com.br/bancodeimagens/bd/ju/2g/bdju2gbffevn4qpep5ehmqgc6.jpg' }}
+            style={Style.imagemitem}
+          />
+
+          <Text style={Style.textocaixa}>
+            A Yamaha Fazer 250 é atualizada na Índia. Por lá chamada de FZ 25, a moto chega com novo conjunto ótico frontal, novo painel LCD e ABS de
+            dois canais..
+          </Text>
 
 
-        <Text style={Style.title}>
-          The title and onPress handler are required. It is recommended to set accessibilityLabel
-          to help make your app usable by everyone.
-      </Text>
-        <Button
-          title="Ver mais"
-          onPress={() => Alert.alert('Disponível nas próximas versões')}
-        />
-      </View>
+          <Button title="Ver mais" onPress={() => Alert.alert('Disponível nas próximas versões')} />
+
+          
+        </View>
+      </ScrollView>
     </ImageBackground>
   );
 }
+
+
+
+
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
