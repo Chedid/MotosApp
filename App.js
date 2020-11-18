@@ -10,37 +10,16 @@ import PecasYa from './Componentes/Pecas/index';
 import VestuYa from './Componentes/Vestuario/index';
 
 import Style from './Estilo/styleinicial';
-
-const image = { uri: "https://i.pinimg.com/564x/7d/5e/36/7d5e360544b7b24c726879f477018c8b.jpg" };
+import CardNovidades from './Componentes/CardNovidades';
 
 // Primeira tela do App
 
 function HomeScreen({ navigation }) {
   return (
+    <CardNovidades>
 
-    <ImageBackground source={image} style={Style.image}>
-      <ScrollView>
-        <Text style={Style.text}>Novidades</Text>
-        
-        
-        <View style={Style.caixas}>
-
-          <Image source={{ uri: 'https://i0.statig.com.br/bancodeimagens/bd/ju/2g/bdju2gbffevn4qpep5ehmqgc6.jpg' }}
-            style={Style.imagemitem}
-          />
-
-          <Text style={Style.textocaixa}>
-            A Yamaha Fazer 250 é atualizada na Índia. Por lá chamada de FZ 25, a moto chega com novo conjunto ótico frontal, novo painel LCD e ABS de
-            dois canais..
-          </Text>
-
-
-          <Button title="Ver mais" onPress={() => Alert.alert('Disponível nas próximas versões')} />
-
-          
-        </View>
-      </ScrollView>
-    </ImageBackground>
+    </CardNovidades>
+    
   );
 }
 
