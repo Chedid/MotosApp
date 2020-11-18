@@ -21,7 +21,8 @@ function HomeScreen({ navigation }) {
     <ImageBackground source={image} style={Style.image}>
       <ScrollView>
         <Text style={Style.text}>Novidades</Text>
-
+        
+        
         <View style={Style.caixas}>
 
           <Image source={{ uri: 'https://i0.statig.com.br/bancodeimagens/bd/ju/2g/bdju2gbffevn4qpep5ehmqgc6.jpg' }}
@@ -102,7 +103,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Tabs">
-        <Stack.Screen name="Yamaha" component={InicialYa} />
+      <Stack.Screen name="Yamaha" component={InicialYa} /*options={{headerShown: false}}*//>
         <Stack.Screen name="Motos" component={Motos} />
         <Stack.Screen name="Peças" component={PecasYa} />
         <Stack.Screen name="Vestuario" component={VestuYa} />

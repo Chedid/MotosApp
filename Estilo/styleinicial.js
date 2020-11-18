@@ -12,10 +12,10 @@ export default StyleSheet.create({
         },
         text: {
           color: "white",
-          fontSize: 42,
+          fontSize: 35,
           fontWeight: "bold",
           margin: "0%",
-          textAlign: "left",
+          textAlign: "center",
           backgroundColor: "#000000a0"
         },
         title: {
