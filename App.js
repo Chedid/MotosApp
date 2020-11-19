@@ -10,13 +10,18 @@ import PecasYa from './Componentes/Pecas/index';
 import VestuYa from './Componentes/Vestuario/index';
 
 import Style from './Estilo/styleinicial';
-
+import CardNovidades from './Componentes/CardNovidades';
 // Primeira tela do App
 
 function HomeScreen({ navigation }) {
   return (
-    <Text>aaa</Text>
-    
+    <CardNovidades
+      img="http://motonewsbrasil.com/wp-content/uploads/2020/11/yamaha-ya-1-red-dragonfly-replica-1-1200x800.jpg"
+      titulo="Yamaha do Brasil cria uma réplica da YA-1 Red Dragonfly, sua 1ª moto"
+      descricao="A Yamaha Motor do Brasil criou uma réplica da sua primeira moto do mundo, a YA-1 Red Dragonfly, em comemoração aos 50 anos da marca no nosso país."
+      preco="R$25.490"
+      proposta="36x de 720,00"
+    ></CardNovidades>
   );
 }
 
@@ -79,7 +84,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Tabs">
-      <Stack.Screen name="Yamaha" component={InicialYa} /*options={{headerShown: false}}*//>
+        <Stack.Screen name="Yamaha" component={InicialYa} /*options={{headerShown: false}}*/ />
         <Stack.Screen name="Motos" component={Motos} />
         <Stack.Screen name="Peças" component={PecasYa} />
         <Stack.Screen name="Vestuario" component={VestuYa} />

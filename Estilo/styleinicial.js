@@ -25,6 +25,12 @@ export default StyleSheet.create({
     margin: "10%",
     marginVertical: 8,
   },
+  titleNovidades: {
+    color: "#20B2AA",
+    margin: "10%",
+    marginVertical: 8,
+    
+  },
   textocaixa: {
     color: "#000000",
     fontSize: 16,
@@ -44,8 +50,6 @@ export default StyleSheet.create({
   caixas: {
     flex: 1,
     flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
     backgroundColor: 'white',
     margin: "5%",
   },
@@ -55,7 +59,7 @@ export default StyleSheet.create({
   },
   imagemitem: {
     width: 300,
-    height: 150,
+    height: 200,
     margin: "5%",
     resizeMode: 'contain',
   },
@@ -74,6 +78,5 @@ export default StyleSheet.create({
     margin: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    alignSelf: 'auto',
   }
 })
