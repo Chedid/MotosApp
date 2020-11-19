@@ -5,7 +5,6 @@ export default StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: "#333"
     },
     postContainer: {
         marginHorizontal: 20,
@@ -18,6 +17,13 @@ export default StyleSheet.create({
         fontSize: 18,
         fontWeight: 'bold',
         marginBottom: 5
+    },
+    imagemitem2: {
+        width: 100,
+        height: 50,
+        marginVertical: 10,
+        marginHorizontal: 20,
+        resizeMode: 'contain',
     },
     postDescription: {
         color: '#666',

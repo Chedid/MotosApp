@@ -9,15 +9,15 @@ export default function Motos(props) {
         <ScrollView>
 
             <View style={Style.caixas}>
-                <View style={{alignItems: "center"}}>
+                <View style={{alignItems: "center", marginVertical: 15}}>
 
 
                     <Image source={{ uri: props.img }}
                         style={Style.imagemitem}
                     />
 
-                    <Text style={Style.titleNovidades}> {props.titulo} {"\n"}</Text>
-                    <Text style={{ fontSize: 14, margin: "5%", marginVertical: 1, textAlign: "justify" }}> {props.descricao}</Text>
+                    <Text style={Style.titleNovidades}> {props.titulo}</Text>
+                    <Text style={{ fontSize: 14, margin: "4%", marginVertical: 1, textAlign: "justify" }}> {props.descricao}</Text>
 
                 </View>
             </View>

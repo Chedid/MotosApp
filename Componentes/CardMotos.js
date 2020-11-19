@@ -6,14 +6,11 @@ const image = { uri: "https://i.pinimg.com/564x/7d/5e/36/7d5e360544b7b24c726879f
 export default function Motos(props) {
     return (
 
-        <ScrollView>
-
+        <View>
             <View style={Style.caixas}>
-
                 <Image source={{ uri: props.img }}
                     style={Style.imagemitem}
                 />
-
                 <Text style={Style.title}>
                     {props.titulo} {"\n"}
                     {props.descricao}
@@ -29,11 +26,9 @@ export default function Motos(props) {
                             <Text style={{ fontWeight: "bold", color: "white" }}> Tenho interesse</Text>
                         </TouchableOpacity>
                     </View>
-
                 </View>
-
             </View>
-        </ScrollView>
+        </View>
 
     );
 }

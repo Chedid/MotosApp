@@ -12,7 +12,7 @@ export default StyleSheet.create({
         resizeMode: "cover",
         justifyContent: "center",
         borderRadius: 5,
-      },
+    },
     box: {
         flex: 1,
         minWidth: 160,
@@ -25,7 +25,7 @@ export default StyleSheet.create({
         borderColor: '#BEBEBE',
         borderWidth: 1,
         borderRadius: 5,
-        
+
     },
     textotitulo: {
         fontSize: 12,
@@ -35,8 +35,15 @@ export default StyleSheet.create({
         marginHorizontal: 10,
         marginVertical: 4
     },
+    imagemitem2: {
+        width: 100,
+        height: 50,
+        marginVertical: 10,
+        marginHorizontal: 20,
+        resizeMode: 'contain',
+    },
     textopreco: {
-        
+
         fontSize: 16,
         fontWeight: "bold",
         color: "black",
@@ -45,7 +52,7 @@ export default StyleSheet.create({
         marginHorizontal: 10,
         marginVertical: 1,
         fontSize: 16,
-        margin: 1 
+        margin: 1
 
     },
     imagemitem: {
@@ -56,7 +63,7 @@ export default StyleSheet.create({
         borderWidth: 1,
         borderRadius: 5,
         resizeMode: 'contain',
-        
+
     },
     botaoanuncio: {
         backgroundColor: '#1E90FF',

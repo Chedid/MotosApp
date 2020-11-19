@@ -19,10 +19,6 @@ export default function Motos(props) {
                 <Text style={{ color: 'black', fontSize: 12, marginHorizontal: 10 }}> {props.textoproposta} </Text>
 
                 <Text style={{ color: '#32CD32', fontSize: 12, margin: 1, marginHorizontal: 10 }}> {props.frete} </Text>
-
-
-
-
             </View>
         </TouchableOpacity >
 
