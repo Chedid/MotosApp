@@ -10,15 +10,12 @@ import PecasYa from './Componentes/Pecas/index';
 import VestuYa from './Componentes/Vestuario/index';
 
 import Style from './Estilo/styleinicial';
-import CardNovidades from './Componentes/CardNovidades';
 
 // Primeira tela do App
 
 function HomeScreen({ navigation }) {
   return (
-    <CardNovidades>
-
-    </CardNovidades>
+    <Text>aaa</Text>
     
   );
 }

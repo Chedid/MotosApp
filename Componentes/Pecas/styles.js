@@ -15,7 +15,7 @@ export default StyleSheet.create({
       },
     box: {
         flex: 1,
-        minWidth: 150,
+        minWidth: 160,
         height: 255,
         width: 200,
         backgroundColor: 'white',
@@ -28,29 +28,31 @@ export default StyleSheet.create({
         
     },
     textotitulo: {
-        alignItems: 'center',
-        justifyContent: 'center',
         fontSize: 12,
         fontWeight: "bold",
-        margin: 5,
         color: "black",
+        textAlign: 'justify',
+        marginHorizontal: 10,
+        marginVertical: 4
     },
     textopreco: {
         
-        fontSize: 13,
+        fontSize: 16,
         fontWeight: "bold",
-        color: "#FFD700",
+        color: "black",
         marginVertical: 5,
-        textAlign: "right",
+        textAlign: "left",
         marginHorizontal: 10,
+        marginVertical: 1,
+        fontSize: 16,
+        margin: 1 
 
     },
     imagemitem: {
         width: 150,
-        height: 110,
+        height: 120,
         margin: 5,
         alignContent: 'center',
-        borderColor: '#BEBEBE',
         borderWidth: 1,
         borderRadius: 5,
         resizeMode: 'contain',
@@ -64,6 +66,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         alignSelf: 'center',
         borderRadius: 5,
+        marginVertical: 2
     }
 
 })

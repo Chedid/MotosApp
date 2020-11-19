@@ -60,8 +60,8 @@ export default StyleSheet.create({
     resizeMode: 'contain',
   },
   botaoanuncio: {
-    backgroundColor: '#1E90FF',
-    width: 130,
+    backgroundColor: '#FF4500',
+    width: 120,
     height: 35,
     justifyContent: 'center',
     alignItems: 'center',
